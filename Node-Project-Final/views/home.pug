@@ -1,0 +1,38 @@
+html
+  head
+    title Please LogIn/SignIn 
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .logInBox
+      h1 Login Here
+      form(method='POST', action='#')
+        #form-group
+            label Username:
+            input.form-control(name='username',type='text')
+        br
+        #form-group
+            label Password:
+            input.form-control(name='password',type='password')
+        br
+        input.btn.btn-primary(type='submit',value='Submit')
+        br
+        a(href='#') Forgot Password?
+        br
+        a(href='/signIn') New User?
+        br
+        #message
+          h3 Password must contain the following:
+          p#letter.invalid
+            | A 
+            b lowercase
+            |  letter
+          p#capital.invalid
+            | A 
+            b capital (uppercase)
+            |  letter
+          p#number.invalid
+            | A 
+            b number
+          p#length1.invalid
+            | Minimum 
+            b 8 characters

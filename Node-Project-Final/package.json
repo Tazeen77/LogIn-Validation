@@ -1,0 +1,23 @@
+{
+  "name": "node-project-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "author": "tazeen khan",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.3.1",
+    "mongoose": "^5.8.9",
+    "parser": "^0.1.4",
+    "pug": "^2.0.4"
+  }
+}
